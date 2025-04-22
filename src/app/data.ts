@@ -1,82 +1,125 @@
-export const skills = [
+export interface ISkill {
+  name: string;
+  grade: number;
+}
+export const skills: ISkill[] = [
+  { name: 'HTML & CSS', grade: 5 },
   { name: 'JavaScript', grade: 5 },
-  { name: 'React', grade: 5 },
-  { name: 'Node.js', grade: 5 },
-  { name: 'Tailwind CSS', grade: 5 },
-  { name: 'PostgresSQL', grade: 4 },
-  { name: 'MongoDB', grade: 4 },
-  { name: 'Git', grade: 5 },
-  { name: 'Agile Development', grade: 5 },
+  { name: 'Typescript', grade: 5 },
+  { name: 'Express', grade: 5 },
+  { name: 'Quasar', grade: 5 },
+  { name: 'Sequelize', grade: 5 },
+  { name: 'Laravel', grade: 4 },
+  { name: 'Codeigniter', grade: 4 },
+  { name: 'Flutter', grade: 3 },
+  { name: 'Java', grade: 4 },
+  { name: 'Git', grade: 4 },
+  { name: 'C++', grade: 2 },
+  { name: 'Python Lang', grade: 3 },
+  { name: 'MongoDB', grade: 3 },
+  { name: 'CI/CD', grade: 4 },
+  { name: 'Docker', grade: 4 },
+  { name: 'Docker Compose', grade: 4 },
+  { name: 'Kubernetes', grade: 3 },
+  { name: 'Redis', grade: 4 },
+  { name: 'PostgresSQL', grade: 5 },
+  { name: 'MySQL', grade: 5 },
+  { name: 'Microservices', grade: 5 },
+  { name: 'Golang', grade: 5 },
+  { name: 'PHP', grade: 4 },
+  { name: 'Web Security', grade: 4 },
+  { name: 'Nginx', grade: 4 },
+  { name: 'Agile Development', grade: 4 },
+  { name: 'Tailwind CSS', grade: 4 },
+  { name: 'React', grade: 4 },
+  { name: 'VueJs', grade: 4 },
+  { name: 'Restful', grade: 5 },
+  { name: 'C#', grade: 4 },
+  { name: 'Sitecore', grade: 3 },
+  { name: 'Solr', grade: 3 },
 ];
 
-export const interests = ['Photography', 'Hiking', 'Reading Science Fiction', 'Playing Chess', 'Cooking'];
-
-export const awards = [
-  { name: 'Employee of the Year - PT Teknologi Maju', year: '2023' },
-  { name: 'Winner of Internal Hackathon - Digital Innovation Startup', year: '2021' },
-  { name: 'Best Project Award - University', year: '2020' },
-  { name: 'Top Contributor Badge - Open Source Project', year: '2019' },
-  { name: 'Innovation Award - Company Internal Event', year: '2022' },
-  { name: 'Certificate of Appreciation - Community Contribution', year: '2021' },
-  { name: "Dean's List - Semester Fall", year: '2019' },
-  { name: 'Hackathon Finalist - Regional Competition', year: '2018' },
+export type IInterest = string;
+export const interests: IInterest[] = [
+  'Photography',
+  'Hiking',
+  'Reading Science Fiction',
+  'Playing Chess',
+  'Traveling',
+  'Coding',
+  'Music',
+  'Gardening',
+  'Bisnis',
 ];
 
-export const certifications = [
-  { name: 'AWS Certified Developer Associate', year: '2023' },
-  { name: 'Certified Kubernetes Administrator (CKA)', year: '2022' },
-  { name: 'Professional Scrum Master I (PSM I)', year: '2022' },
-  { name: 'Google Cloud Professional Cloud Developer', year: '2021' },
-  { name: 'Microsoft Certified: Azure Developer Associate', year: '2021' },
-  { name: 'CompTIA Security+', year: '2020' },
-  { name: 'Certified Ethical Hacker (CEH)', year: '2020' },
-  { name: 'OpenJS Certified Developer (JSNSD)', year: '2019' },
+export interface IAward {
+  name: string;
+  year: string;
+}
+export const awards: IAward[] = [
+  // { name: 'Employee of the Year - PT Teknologi Maju', year: '2023' },
 ];
 
-export const publications = [
-  { name: 'Building Scalable APIs with Node.js and Express (Tech Blog)', year: '2023' },
-  { name: 'Optimizing React Performance (Conference Talk)', year: '2022' },
-  { name: 'Introduction to Microservices (Online Article)', year: '2021' },
-  { name: 'Leveraging Serverless Functions for Web Applications (Tech Magazine)', year: '2023' },
-  { name: 'A Comparative Study of SQL vs NoSQL Databases (Research Paper)', year: '2020' },
-  { name: 'Getting Started with Docker Containers (Online Tutorial)', year: '2021' },
-  { name: 'Building Responsive UIs with Tailwind CSS (Blog Post Series)', year: '2022' },
-  { name: 'Implementing CI/CD Pipelines with Jenkins (Technical Guide)', year: '2023' },
+export interface ICertification {
+  name: string;
+  year: string;
+}
+export const certifications: ICertification[] = [
+  // { name: 'AWS Certified Developer Associate', year: '2023' },
 ];
 
-export const volunteerExperience = [
-  { name: 'Code Mentor at Local Community Workshop', years: '2022-Present' },
-  { name: 'Organizer for Tech Meetup Group', years: '2021-2022' },
-  { name: 'Website Developer for Non-Profit', years: '2020' },
-  { name: 'Event Volunteer - Annual Tech Conference', years: '2019, 2020' },
+export interface IPublication {
+  name: string;
+  year: string;
+}
+export const publications: IPublication[] = [
+  // { name: 'Building Scalable APIs with Node.js and Express (Tech Blog)', year: '2023' },
 ];
 
-export const portfolioLinks = [
-  { name: 'Online Portfolio', url: 'https://yourportfolio.com' },
-  { name: 'Project Alpha Repository', url: 'https://github.com/yourusername/project-alpha' },
-  { name: 'Project Beta Live Demo', url: 'https://project-beta-demo.netlify.app' },
+export interface IVolunteerExperience {
+  name: string;
+  years: string;
+}
+export const volunteerExperiences: IVolunteerExperience[] = [
+  // { name: 'Code Mentor at Local Community Workshop', years: '2022-Present' },
 ];
 
-export const featuredProjects = [
-  {
-    name: 'Project Management Platform (Personal Project)',
-    year: '2023',
-    description: 'Web application for managing team tasks and projects.',
-    technologies: 'React, Express.js, MongoDB, Socket.IO.',
-    features: 'Real-time task updates, user authentication, project dashboards.',
-    url: 'https://github.com/yourusername/project-management-platform',
-  },
-  {
-    name: 'E-commerce Backend API',
-    year: '2022',
-    description: 'Built robust backend API for an e-commerce platform.',
-    technologies: 'Node.js, Express.js, PostgresSQL, Docker.',
-    features: 'User authentication, product catalog, order processing.',
-    url: 'https://github.com/yourusername/ecommerce-api',
-  },
+export interface IPortfolioLink {
+  name: string;
+  url: string;
+}
+export const portfolioLinks: IPortfolioLink[] = [
+  // { name: 'Online Portfolio', url: 'https://yourportfolio.com' },
 ];
 
-export const workExperience = [
+export interface IFeaturedProject {
+  name: string;
+  year: string;
+  description: string;
+  technologies: string;
+  features: string;
+  url: string;
+}
+export const featuredProjects: IFeaturedProject[] = [
+  // {
+  //   name: 'Project Management Platform (Personal Project)',
+  //   year: '2023',
+  //   description: 'Web application for managing team tasks and projects.',
+  //   technologies: 'React, Express.js, MongoDB, Socket.IO.',
+  //   features: 'Real-time task updates, user authentication, project dashboards.',
+  //   url: 'https://github.com/yourusername/project-management-platform',
+  // },
+];
+
+export interface IWorkExperience {
+  company: string;
+  title: string;
+  dates: string;
+  startDate: string;
+  endDate: string;
+  responsibilities: string[];
+}
+export const workExperiences: IWorkExperience[] = [
   {
     company: 'PT Siloam International Hospitals Tbk (Siloam Hospitals)',
     title: 'Full Stack Developer',
@@ -127,7 +170,13 @@ export const workExperience = [
   },
 ];
 
-export const education = [
+export interface IEducation {
+  institution: string;
+  degree: string;
+  years: string;
+  details: string;
+}
+export const education: IEducation[] = [
   {
     institution: 'UIN Syarif Hidayatullah Jakarta',
     degree: 'Informatics Engineering',

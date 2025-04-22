@@ -5,12 +5,13 @@ import {
   certifications,
   education,
   featuredProjects,
+  IFeaturedProject,
   interests,
   portfolioLinks,
   publications,
   skills,
-  volunteerExperience,
-  workExperience,
+  volunteerExperiences,
+  workExperiences,
 } from '@@/data';
 import { calculateDuration, getWidthClass } from '@@/helper';
 
@@ -101,7 +102,7 @@ export default function Home() {
       <section className="border border-gray-200 rounded-lg p-4 shadow-sm mb-8">
         <h2 className="text-2xl font-bold text-gray-800 border-b-2 border-gray-300 pb-3 mb-4">Work Experience</h2>
         <div className="border-l-4 border-teal-600 pl-4 space-y-6">
-          {workExperience.map((entry, index) => (
+          {workExperiences.map((entry, index) => (
             <div
               key={index}
               className="relative mb-4 pb-4 last:mb-0 last:pb-0 border-b border-gray-200 last:border-b-0"
@@ -139,7 +140,7 @@ export default function Home() {
       </section>
       <section className="border border-gray-200 rounded-lg p-4 shadow-sm mb-8">
         <h2 className="text-2xl font-bold text-gray-800 border-b-2 border-gray-300 pb-3 mb-4">Skills</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-x-4 gap-y-4">
           {skills.map((skill, index) => (
             <div key={index} className="flex flex-col">
               <span className="text-gray-800 font-medium mb-1">{skill.name}</span>
@@ -154,10 +155,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mb-8">
+      <section className="border border-gray-200 rounded-lg p-4 shadow-sm mb-8">
         <h2 className="2xl font-bold text-gray-800 border-b-2 border-gray-300 pb-3 mb-4">Featured Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {featuredProjects.map((project, index) => (
+          {featuredProjects.map((project: IFeaturedProject, index: number) => (
             <a
               key={index}
               href={project.url}
@@ -242,7 +243,7 @@ export default function Home() {
       <section className="border border-gray-200 rounded-lg p-4 shadow-sm mb-8">
         <h2 className="text-2xl font-bold text-gray-800 border-b-2 border-gray-300 pb-3 mb-4">Volunteer Experience</h2>
         <ul className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-1 list-disc list-inside mt-2 text-gray-700">
-          {volunteerExperience.map((exp, index) => (
+          {volunteerExperiences.map((exp, index) => (
             <li key={index}>
               {exp.name} <span className="text-gray-600 italic text-sm">({exp.years})</span>
             </li>
