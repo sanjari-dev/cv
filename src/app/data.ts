@@ -9,13 +9,7 @@ export const skills = [
   { name: 'Agile Development', grade: 5 },
 ];
 
-export const interests = [
-  'Photography',
-  'Hiking',
-  'Reading Science Fiction',
-  'Playing Chess',
-  'Cooking',
-];
+export const interests = ['Photography', 'Hiking', 'Reading Science Fiction', 'Playing Chess', 'Cooking'];
 
 export const awards = [
   { name: 'Employee of the Year - PT Teknologi Maju', year: '2023' },
@@ -24,7 +18,7 @@ export const awards = [
   { name: 'Top Contributor Badge - Open Source Project', year: '2019' },
   { name: 'Innovation Award - Company Internal Event', year: '2022' },
   { name: 'Certificate of Appreciation - Community Contribution', year: '2021' },
-  { name: 'Dean\'s List - Semester Fall', year: '2019' },
+  { name: "Dean's List - Semester Fall", year: '2019' },
   { name: 'Hackathon Finalist - Regional Competition', year: '2018' },
 ];
 
@@ -70,72 +64,81 @@ export const featuredProjects = [
     description: 'Web application for managing team tasks and projects.',
     technologies: 'React, Express.js, MongoDB, Socket.IO.',
     features: 'Real-time task updates, user authentication, project dashboards.',
-    url: 'https://github.com/yourusername/project-management-platform'
+    url: 'https://github.com/yourusername/project-management-platform',
   },
   {
     name: 'E-commerce Backend API',
     year: '2022',
     description: 'Built robust backend API for an e-commerce platform.',
-    technologies: 'Node.js, Express.js, PostgreSQL, Docker.',
+    technologies: 'Node.js, Express.js, PostgresSQL, Docker.',
     features: 'User authentication, product catalog, order processing.',
-    url: 'https://github.com/yourusername/ecommerce-api'
-  }
+    url: 'https://github.com/yourusername/ecommerce-api',
+  },
 ];
 
 export const workExperience = [
   {
-    company: 'PT Teknologi Maju',
-    title: 'Software Engineer',
-    dates: 'January 2022 - Present',
-    responsibilities: [
-      'Developed and maintained new features for an e-commerce platform using React, Node.js, and PostgreSQL.',
-      'Improved front-end application performance by 20% through code optimization and lazy loading.',
-      'Actively participated in code reviews and mentored junior developers.',
-      'Implemented unit and integration testing to ensure code quality.',
-    ],
+    company: 'PT Siloam International Hospitals Tbk (Siloam Hospitals)',
+    title: 'Full Stack Developer',
+    dates: 'June 2024 - Present',
+    startDate: '2024-06-25',
+    endDate: 'Present',
+    responsibilities: [],
   },
   {
-    company: 'Digital Innovation Startup',
-    title: 'Junior Software Engineer',
-    dates: 'July 2020 - December 2021',
-    responsibilities: [
-      'Assisted in the development of a mobile application using React Native.',
-      'Created basic RESTful APIs using Express.js.',
-      'Learned and applied agile development principles.',
-    ],
+    company: 'PT Nusantara Duta Solusindo',
+    title: 'Full Stack Developer (as vendor)',
+    dates: 'June 2024 - Present',
+    startDate: '2024-06-25',
+    endDate: 'Present',
+    responsibilities: [],
   },
   {
-    company: 'Perusahaan Teknologi XYZ',
-    title: 'Software Developer Intern',
-    dates: 'Maret 2019 - Juni 2020',
-    responsibilities: [
-      'Membantu tim dalam pengembangan fitur baru untuk aplikasi internal.',
-      'Melakukan debugging dan perbaikan bug pada kode yang ada.',
-      'Berpartisipasi dalam pertemuan tim dan proses pengembangan.',
-    ],
+    company: 'PT Blend Media Kreasi',
+    title: 'Sitecore Developer',
+    dates: 'March 2023 - June 2024',
+    startDate: '2023-03-25',
+    endDate: '2024-06-25',
+    responsibilities: [],
   },
   {
-    company: 'Laboratorium Riset Universitas',
-    title: 'Asisten Peneliti',
-    dates: 'Agustus 2018 - Februari 2019',
-    responsibilities: [
-      'Membantu dalam riset dan pengembangan prototipe perangkat lunak.',
-      'Menulis dokumentasi teknis untuk proyek riset.',
-    ],
+    company: 'PT Solusi Inovasi Pesat',
+    title: 'Web Developer',
+    dates: 'March 2022 - March 2023',
+    startDate: '2022-03-25',
+    endDate: '2023-03-25',
+    responsibilities: [],
+  },
+  {
+    company: 'PT. Modernesia Teknologi Informatika',
+    title: 'Software Developer',
+    dates: 'March 2019 - March 2022',
+    startDate: '2019-03-01',
+    endDate: '2022-03-25',
+    responsibilities: [],
+  },
+  {
+    company: 'Aquamatika',
+    title: 'Private Math Tutor',
+    dates: 'August 2017 - May 2020',
+    startDate: '2017-08-01',
+    endDate: '2020-05-31',
+    responsibilities: [],
   },
 ];
 
 export const education = [
   {
-    institution: 'Indonesia University of Technology',
-    degree: 'Bachelor of Computer Science',
-    years: '2016 - 2020',
+    institution: 'UIN Syarif Hidayatullah Jakarta',
+    degree: 'Informatics Engineering',
+    years: '2018 - 2022',
     details: 'Focused on Software Engineering and Information Systems.',
   },
   {
-    institution: 'Sekolah Menengah Atas 1 Jakarta',
-    degree: 'Ilmu Pengetahuan Alam',
-    years: '2013 - 2016',
-    details: 'Fokus pada mata pelajaran sains dan matematika.',
+    institution: 'SMAN 1 Ciampea',
+    degree: 'Science',
+    years: '2014 - 2017',
+    details:
+      'The focus of the Natural Sciences major in high school is on exact subjects such as mathematics, physics, chemistry, and biology.',
   },
 ];

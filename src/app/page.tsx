@@ -1,4 +1,5 @@
 import { Download, Folder, Globe, Mail, MapPin, Phone } from 'lucide-react';
+import Image from 'next/image';
 import {
   awards,
   certifications,
@@ -10,9 +11,8 @@ import {
   skills,
   volunteerExperience,
   workExperience,
-} from './data';
-import { getWidthClass } from './helper';
-import Image from 'next/image';
+} from '@@/data';
+import { calculateDuration, getWidthClass } from '@@/helper';
 
 export default function Home() {
   return (
@@ -108,7 +108,9 @@ export default function Home() {
             >
               <div className="flex justify-between items-center mb-1">
                 <h3 className="text-xl font-semibold text-gray-800">{entry.company}</h3>
-                <p className="text-gray-600 italic text-sm">{entry.dates}</p>
+                <p className="text-gray-600 italic text-sm">
+                  {entry.dates} ({calculateDuration(entry.startDate, entry.endDate)})
+                </p>
               </div>
               <p className="text-gray-700 mb-2">{entry.title}</p>
               <ul className="list-disc list-inside mt-2 text-gray-700 space-y-1">
