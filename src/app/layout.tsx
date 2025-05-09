@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { ReactNode } from 'react';
 import './globals.css';
+import Script from 'next/script';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -24,9 +25,28 @@ export default function RootLayout({
 }: Readonly<{
   children: ReactNode;
 }>) {
+  const tawkToPropertyId = process.env.NEXT_PUBLIC_TAWK_TO_PROPERTY_ID || '681d93626d119d1911b85f94';
+  const tawkToWidgetId = process.env.NEXT_PUBLIC_TAWK_TO_WIDGET_ID || '1iqpofe8r';
+  const tawkToSrc = `https://tawk.to/chat/${tawkToPropertyId}/${tawkToWidgetId}`;
+
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {children}
+        <Script id="tawk-to-script" strategy="afterInteractive">
+          {`
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='${tawkToSrc}';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+          `}
+        </Script>
+      </body>
     </html>
   );
 }
