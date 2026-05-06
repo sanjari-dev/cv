@@ -1,4 +1,4 @@
-import { Download, Folder, Globe, Mail, MapPin, Phone } from 'lucide-react';
+import { Download, Folder, Github, Globe, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
 import {
   awards,
@@ -19,14 +19,8 @@ export default function Home() {
   return (
     <div className="container mx-auto px-8 py-10 bg-white shadow-2xl rounded-lg my-6 max-w-3xl md:max-w-4xl lg:max-w-5xl border border-gray-200">
       <header className="relative flex flex-col md:flex-row items-center justify-between border-b border-gray-200 pb-6 mb-8">
-        <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden mb-4 md:mb-0 shadow-md border border-gray-200">
-          <Image
-            src="https://media.licdn.com/dms/image/v2/C5603AQFKb5gjiI_Iwg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1633449533666?e=1774483200&v=beta&t=8oW5pV_3D3O28CN58R-M9k05LJFlpuvI8sBbYponTi8"
-            alt="Sanjari's Photo"
-            fill
-            style={{ objectFit: 'cover' }}
-            priority
-          />
+        <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden mb-4 md:mb-0 shadow-md border border-gray-200 bg-gray-100">
+          <Image src="/profile.webp" alt="Sanjari Alfian" fill sizes="176px" className="object-cover" priority />
         </div>
 
         <div className="text-center md:text-left flex-grow md:ml-8">
@@ -50,26 +44,14 @@ export default function Home() {
               href="https://www.linkedin.com/in/sanjari-alfian"
               className="flex items-center hover:text-blue-700 transition duration-300"
             >
-              <Image
-                width={18}
-                height={18}
-                src="https://cdn.skuy.co.id/tayap67548_linxues_com/2025/04/be427d70_icons8-linkedin-48.png"
-                alt="LinkedIn"
-                className="mr-2 text-gray-700"
-              />
+              <Linkedin size={18} className="mr-2 text-gray-700" />
               LinkedIn
             </a>
             <a
               href="https://github.com/sanjari-dev"
               className="flex items-center hover:text-gray-900 transition duration-300"
             >
-              <Image
-                width={18}
-                height={18}
-                src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/github.svg"
-                alt="GitHub"
-                className="mr-2 text-gray-700"
-              />
+              <Github size={18} className="mr-2 text-gray-700" />
               GitHub
             </a>
             <a href="https://sanjari.my.id" className="flex items-center hover:text-blue-700 transition duration-300">
@@ -81,12 +63,14 @@ export default function Home() {
           </div>
         </div>
         <div className="absolute top-4 right-4">
-          <button
+          <a
+            href="/Sanjari-Alfian-CV.pdf"
+            download="Sanjari-Alfian-CV.pdf"
             className="flex items-center px-3 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition duration-300 ease-in-out"
             aria-label="Download CV"
           >
             <Download size={20} className="text-gray-600" />
-          </button>
+          </a>
         </div>
       </header>
 
