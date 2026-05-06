@@ -241,7 +241,11 @@ export const workExperiences: IWorkExperience[] = [
     dates: 'June 2024 - Present',
     startDate: '2024-06-25',
     endDate: 'Present',
-    responsibilities: [],
+    responsibilities: [
+      'Developing and maintaining the Hospital Information System (HOPE) to integrate patient Electronic Medical Records (EMR) and daily hospital operations.',
+      'Building interactive and responsive user interfaces utilizing React and TypeScript.',
+      'Designing and managing backend architecture using Node.js and SQL to ensure high scalability and medical data security.',
+    ],
   },
   {
     company: 'PT Nusantara Duta Solusindo',
@@ -249,7 +253,10 @@ export const workExperiences: IWorkExperience[] = [
     dates: 'June 2024 - Present',
     startDate: '2024-06-25',
     endDate: 'Present',
-    responsibilities: [],
+    responsibilities: [
+      'Working as a vendor to develop healthcare systems for key clients, ensuring on-time project delivery with high-quality code standards.',
+      'Collaborating closely with the client’s internal team to implement new healthcare features and resolve software bugs.',
+    ],
   },
   {
     company: 'PT Blend Media Kreasi',
@@ -257,7 +264,11 @@ export const workExperiences: IWorkExperience[] = [
     dates: 'March 2023 - June 2024',
     startDate: '2023-03-25',
     endDate: '2024-06-25',
-    responsibilities: ['Sitecore', 'Form Dashboard'],
+    responsibilities: [
+      'Developed and managed Content Management System (CMS) platforms utilizing Sitecore technology.',
+      'Designed and implemented integrated Form Dashboard features for comprehensive data management and tracking.',
+      'Optimized website performance and ensured seamless system integrations tailored to the client’s business requirements.',
+    ],
   },
   {
     company: 'PT Solusi Inovasi Pesat',
@@ -265,7 +276,11 @@ export const workExperiences: IWorkExperience[] = [
     dates: 'March 2022 - March 2023',
     startDate: '2022-03-25',
     endDate: '2023-03-25',
-    responsibilities: ['Marketing & Sales App', 'Mitrahino Productivity'],
+    responsibilities: [
+      'Architected and developed an integrated Marketing & Sales application using Laravel and Vue.js (Quasar).',
+      'Engineered end-to-end productivity ERP solutions (Mitrahino Productivity) using Express.js and Quasar.',
+      'Designed relational database architectures and developed RESTful APIs to facilitate efficient system communication across platforms.',
+    ],
   },
   {
     company: 'PT. Modernesia Teknologi Informatika',
@@ -273,7 +288,11 @@ export const workExperiences: IWorkExperience[] = [
     dates: 'March 2019 - March 2022',
     startDate: '2019-03-01',
     endDate: '2022-03-25',
-    responsibilities: ['Sangkara Cam', 'Tron', 'Teman Bus', 'SWJ', 'JakParkir'],
+    responsibilities: [
+      'Designed and developed robust backend services utilizing Express.js for various management applications.',
+      'Built public infrastructure and operational management systems, including transportation management (Tron, Teman Bus) and parking management (JakParkir).',
+      'Implemented third-party API integrations and ensured high availability for large-scale systems.',
+    ],
   },
   {
     company: 'Berbagi Kerja ID',
@@ -282,11 +301,9 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2021-01-01',
     endDate: '2021-06-30',
     responsibilities: [
-      'Landing Page Berbagi Kerja ID App',
-      'Android App Berbagi Kerja',
-      'Backend Berbagi Kerja',
-      'Finance Dev',
-      'UI/UX Design',
+      'Participated in the full-cycle development of the "Berbagi Kerja" startup application, from UI/UX design to implementation.',
+      'Developed an interactive landing page and contributed to the Android mobile application.',
+      'Contributed to the backend architecture using Express.js and developed an internal finance module.',
     ],
   },
   {
@@ -295,7 +312,10 @@ export const workExperiences: IWorkExperience[] = [
     dates: 'August 2017 - May 2020',
     startDate: '2017-08-01',
     endDate: '2020-05-31',
-    responsibilities: ['Private Tutoring', 'Math Coaching'],
+    responsibilities: [
+      "Provided comprehensive private math tutoring sessions to improve students' understanding and academic scores.",
+      'Evaluated and customized teaching methods based on individual student needs, learning psychology, and skill levels.',
+    ],
   },
   {
     company: 'LPM Quantumatika Ciampea',
@@ -303,7 +323,11 @@ export const workExperiences: IWorkExperience[] = [
     dates: 'June 2017 - October 2018',
     startDate: '2017-06-01',
     endDate: '2018-10-31',
-    responsibilities: ['Math Teacher', 'Teaching Management', 'Financial Management', 'Marketing', 'Instructor Tentor'],
+    responsibilities: [
+      'Taught mathematics subjects to a diverse range of students from elementary to high school levels.',
+      'Provided training and coaching to fellow tutors as an Instructor Tentor.',
+      'Co-managed the institution’s operations, including teaching schedules, financial management, and marketing strategies.',
+    ],
   },
 ];
 
