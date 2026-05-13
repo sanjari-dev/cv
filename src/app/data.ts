@@ -2,55 +2,86 @@ export interface ISkill {
   name: string;
   grade: number;
 }
-export const skills: ISkill[] = [
-  { name: 'HTML & CSS', grade: 5 },
-  { name: 'JavaScript', grade: 5 },
-  { name: 'Typescript', grade: 5 },
-  { name: 'Express', grade: 5 },
-  { name: 'Quasar', grade: 5 },
-  { name: 'Sequelize', grade: 5 },
-  { name: 'Laravel', grade: 4 },
-  { name: 'Codeigniter', grade: 4 },
-  { name: 'Flutter', grade: 3 },
-  { name: 'Java', grade: 4 },
-  { name: 'Git', grade: 4 },
-  { name: 'C++', grade: 2 },
-  { name: 'Python Lang', grade: 3 },
-  { name: 'MongoDB', grade: 3 },
-  { name: 'CI/CD', grade: 4 },
-  { name: 'Docker', grade: 4 },
-  { name: 'Docker Compose', grade: 4 },
-  { name: 'Kubernetes', grade: 3 },
-  { name: 'Redis', grade: 4 },
-  { name: 'PostgresSQL', grade: 5 },
-  { name: 'MySQL', grade: 5 },
-  { name: 'Microservices', grade: 5 },
-  { name: 'Golang', grade: 5 },
-  { name: 'PHP', grade: 4 },
-  { name: 'Web Security', grade: 4 },
-  { name: 'Nginx', grade: 4 },
-  { name: 'Agile Development', grade: 4 },
-  { name: 'Tailwind CSS', grade: 4 },
-  { name: 'React', grade: 4 },
-  { name: 'VueJs', grade: 4 },
-  { name: 'Restful', grade: 5 },
-  { name: 'C#', grade: 4 },
-  { name: 'Sitecore', grade: 3 },
-  { name: 'Solr', grade: 3 },
-  { name: 'Monolithic Apps', grade: 4 },
-  { name: 'Machine Learning', grade: 3 },
-  { name: 'MochaJS & JUnit', grade: 4 },
-  { name: 'Rust', grade: 3 },
-  { name: 'JetBrains IDEs', grade: 5 },
-  { name: 'Google Gemini (AI)', grade: 4 },
-  { name: 'Antigravity (Python)', grade: 5 },
-  { name: 'Asp.Net', grade: 2 },
-  { name: 'SQL Server', grade: 4 },
-  { name: 'DBeaver & DBSchema', grade: 4 },
-  { name: 'IIS', grade: 3 },
-  { name: 'Windows PowerShell', grade: 3 },
-  { name: 'WebStorm & Goland', grade: 4 },
-  { name: 'DataGrip & Rider', grade: 4 },
+
+export interface ISkillCategory {
+  category: string;
+  items: ISkill[];
+}
+
+export const skillCategories: ISkillCategory[] = [
+  {
+    category: 'Languages',
+    items: [
+      { name: 'JavaScript', grade: 5 },
+      { name: 'TypeScript', grade: 5 },
+      { name: 'Golang', grade: 5 },
+      { name: 'Python', grade: 4 },
+      { name: 'Java', grade: 4 },
+      { name: 'PHP', grade: 4 },
+      { name: 'C#', grade: 4 },
+      { name: 'Rust', grade: 4 },
+      { name: 'C++', grade: 2 },
+    ],
+  },
+  {
+    category: 'Frontend',
+    items: [
+      { name: 'HTML & CSS', grade: 5 },
+      { name: 'React', grade: 4 },
+      { name: 'Vue.js', grade: 4 },
+      { name: 'Tailwind CSS', grade: 4 },
+      { name: 'Quasar', grade: 5 },
+      { name: 'Flutter', grade: 3 },
+    ],
+  },
+  {
+    category: 'Backend & Microservices',
+    items: [
+      { name: 'Node.js / Express', grade: 5 },
+      { name: 'Laravel', grade: 4 },
+      { name: 'Codeigniter', grade: 4 },
+      { name: 'Sequelize', grade: 5 },
+      { name: 'RESTful APIs', grade: 5 },
+      { name: 'Sitecore', grade: 3 },
+      { name: 'MochaJS & JUnit', grade: 4 },
+      { name: 'ASP.NET', grade: 2 },
+    ],
+  },
+  {
+    category: 'Databases & Data Engineering',
+    items: [
+      { name: 'PostgreSQL', grade: 5 },
+      { name: 'MySQL', grade: 5 },
+      { name: 'ClickHouse', grade: 4 },
+      { name: 'SQL Server', grade: 4 },
+      { name: 'MongoDB', grade: 3 },
+      { name: 'Redis', grade: 4 },
+      { name: 'DBeaver & DBSchema', grade: 4 },
+      { name: 'DataGrip & Rider', grade: 4 },
+      { name: 'Solr', grade: 3 },
+    ],
+  },
+  {
+    category: 'System Architecture & AI',
+    items: [
+      { name: 'Microservices', grade: 5 },
+      { name: 'High-Performance Computing', grade: 4 },
+      { name: 'Docker & Compose', grade: 4 },
+      { name: 'Kubernetes', grade: 3 },
+      { name: 'CI/CD Pipelines', grade: 4 },
+      { name: 'Web Security', grade: 4 },
+      { name: 'Nginx', grade: 4 },
+      { name: 'Agile Development', grade: 4 },
+      { name: 'Machine Learning', grade: 3 },
+      { name: 'Google Gemini (AI)', grade: 4 },
+      { name: 'Antigravity (Python)', grade: 5 },
+      { name: 'Monolithic Apps', grade: 4 },
+      { name: 'IIS', grade: 3 },
+      { name: 'Windows PowerShell', grade: 3 },
+      { name: 'WebStorm & Goland', grade: 4 },
+      { name: 'JetBrains IDEs', grade: 5 },
+    ],
+  },
 ];
 
 export type IInterest = string;
@@ -123,12 +154,12 @@ export interface IFeaturedProject {
 
 export const featuredProjects: IFeaturedProject[] = [
   {
-    name: 'Geonera (Aplikasi Signal Forex)',
+    name: 'Geonera (Strategy Discovery Machine)',
     year: '2025 - Present',
     description:
-      'Personal project: A Forex signal application providing real-time trading signals, market analysis, and user notifications.',
-    technologies: 'Node.js, React Native, Python (Silakan disesuaikan)',
-    features: 'Real-time Signals, Market Analysis, Push Notifications',
+      'Engineered the Strategy Discovery Machine (ESSE) utilizing Bayesian Optimization and Genetic Programming within an advanced walk-forward engine to systematically identify robust quantitative strategies. Spearheaded the system migration from Python to Rust to maximize algorithmic performance. Architected complex Data Definition Language (DDL) schemas using ClickHouse to efficiently manage and query massive datasets of candle and tick data.',
+    technologies: 'Rust, Python, ClickHouse',
+    features: 'Top-N Strategy Selection Engine, Strategy Export Layer, Walk-Forward Validation',
     url: '#',
   },
   {
@@ -136,7 +167,7 @@ export const featuredProjects: IFeaturedProject[] = [
     year: '2024 - Present',
     description:
       'Hospital Information System for managing hospital operations, electronic medical records (EMR), and patient data integrations.',
-    technologies: 'Node.js, React, TypeScript, SQL (Silakan disesuaikan)',
+    technologies: 'Node.js, React, TypeScript, SQL',
     features: 'Patient Management, Electronic Medical Records, Hospital Operations',
     url: '#',
   },
@@ -242,9 +273,9 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2024-06-25',
     endDate: 'Present',
     responsibilities: [
-      'Developing and maintaining the Hospital Information System (HOPE) to integrate patient Electronic Medical Records (EMR) and daily hospital operations.',
-      'Building interactive and responsive user interfaces utilizing React and TypeScript.',
-      'Designing and managing backend architecture using Node.js and SQL to ensure high scalability and medical data security.',
+      'Developed and maintained the Hospital Information System (HOPE) utilizing React and TypeScript, accelerating daily hospital operations and EMR integrations by [X]%.',
+      'Engineered a high-performance backend architecture using Node.js and SQL to seamlessly manage patient records, reducing data retrieval latency by [X]%.',
+      'Designed interactive user interfaces that improved medical staff productivity and overall user satisfaction by [X]%.'
     ],
   },
   {
@@ -254,8 +285,8 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2024-06-25',
     endDate: 'Present',
     responsibilities: [
-      'Working as a vendor to develop healthcare systems for key clients, ensuring on-time project delivery with high-quality code standards.',
-      'Collaborating closely with the client’s internal team to implement new healthcare features and resolve software bugs.',
+      'Delivered critical healthcare systems for key clients as a vendor, achieving a [X]% improvement in project delivery timelines with high-quality code standards.',
+      'Collaborated seamlessly with client internal teams to deploy new healthcare features and resolve complex software bugs, decreasing system downtime by [X]%.'
     ],
   },
   {
@@ -265,9 +296,9 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2023-03-25',
     endDate: '2024-06-25',
     responsibilities: [
-      'Developed and managed Content Management System (CMS) platforms utilizing Sitecore technology.',
-      'Designed and implemented integrated Form Dashboard features for comprehensive data management and tracking.',
-      'Optimized website performance and ensured seamless system integrations tailored to the client’s business requirements.',
+      'Developed and managed enterprise-grade Content Management System (CMS) platforms using Sitecore, increasing content deployment speed by [X]%.',
+      'Architected and implemented integrated Form Dashboard features, boosting data tracking efficiency and management accuracy by [X]%.',
+      'Optimized website performance and streamlined system integrations, which improved overall page load speeds by [X]%.'
     ],
   },
   {
@@ -277,9 +308,9 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2022-03-25',
     endDate: '2023-03-25',
     responsibilities: [
-      'Architected and developed an integrated Marketing & Sales application using Laravel and Vue.js (Quasar).',
-      'Engineered end-to-end productivity ERP solutions (Mitrahino Productivity) using Express.js and Quasar.',
-      'Designed relational database architectures and developed RESTful APIs to facilitate efficient system communication across platforms.',
+      'Architected and deployed an integrated Marketing & Sales application utilizing Laravel and Vue.js (Quasar), accelerating sales tracking processes by [X]%.',
+      'Engineered the end-to-end Mitrahino Productivity ERP solution using Express.js and Quasar, resulting in a [X]% increase in client operational productivity.',
+      'Designed scalable relational database architectures and RESTful APIs, improving system communication efficiency across platforms by [X]%.'
     ],
   },
   {
@@ -289,9 +320,8 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2019-03-01',
     endDate: '2022-03-25',
     responsibilities: [
-      'Designed and developed robust backend services utilizing Express.js for various management applications.',
-      'Built public infrastructure and operational management systems, including transportation management (Tron, Teman Bus) and parking management (JakParkir).',
-      'Implemented third-party API integrations and ensured high availability for large-scale systems.',
+      'Designed and developed robust backend services for massive public infrastructure systems (Tron, Teman Bus, JakParkir) using Express.js, handling over [Y] million daily transactions.',
+      'Implemented high-availability API integrations and optimized operational management platforms, reducing system latency by [X]% under peak loads.'
     ],
   },
   {
@@ -301,9 +331,8 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2021-01-01',
     endDate: '2021-06-30',
     responsibilities: [
-      'Participated in the full-cycle development of the "Berbagi Kerja" startup application, from UI/UX design to implementation.',
-      'Developed an interactive landing page and contributed to the Android mobile application.',
-      'Contributed to the backend architecture using Express.js and developed an internal finance module.',
+      'Spearheaded the full-cycle development of the "Berbagi Kerja" startup platform from UI/UX design to implementation, increasing user acquisition by [X]%.',
+      'Engineered scalable backend architecture and an internal finance module using Express.js, improving transaction processing speed by [X]%.'
     ],
   },
   {
@@ -313,8 +342,8 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2017-08-01',
     endDate: '2020-05-31',
     responsibilities: [
-      "Provided comprehensive private math tutoring sessions to improve students' understanding and academic scores.",
-      'Evaluated and customized teaching methods based on individual student needs, learning psychology, and skill levels.',
+      "Delivered comprehensive mathematics training programs, improving student academic scores and conceptual understanding by [X]%.",
+      'Customized and evaluated pedagogical methods tailored to individual learning capabilities, resulting in a [X]% increase in student satisfaction.'
     ],
   },
   {
@@ -324,9 +353,9 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2017-06-01',
     endDate: '2018-10-31',
     responsibilities: [
-      'Taught mathematics subjects to a diverse range of students from elementary to high school levels.',
-      'Provided training and coaching to fellow tutors as an Instructor Tentor.',
-      'Co-managed the institution’s operations, including teaching schedules, financial management, and marketing strategies.',
+      'Taught mathematics subjects to a diverse range of students from elementary to high school levels, consistently raising class averages by [X]%.',
+      'Provided advanced training and coaching to fellow tutors as an Instructor Tentor, enhancing overall teaching quality by [X]%.',
+      'Co-managed institution operations, including teaching schedules, financial management, and marketing strategies, which increased student enrollment by [X]%.'
     ],
   },
 ];
