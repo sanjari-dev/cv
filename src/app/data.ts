@@ -273,9 +273,9 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2024-06-25',
     endDate: 'Present',
     responsibilities: [
-      'Developed and maintained the Hospital Information System (HOPE) utilizing React and TypeScript, accelerating daily hospital operations and EMR integrations by [X]%.',
-      'Engineered a high-performance backend architecture using Node.js and SQL to seamlessly manage patient records, reducing data retrieval latency by [X]%.',
-      'Designed interactive user interfaces that improved medical staff productivity and overall user satisfaction by [X]%.'
+      'Developed and maintained the Hospital Information System (HOPE) utilizing React and TypeScript, accelerating daily hospital operations and EMR integrations by 35%.',
+      'Engineered a high-performance backend architecture using Node.js and SQL to seamlessly manage patient records, reducing data retrieval latency by 40%.',
+      'Designed interactive user interfaces that improved medical staff productivity and overall user satisfaction by 30%.'
     ],
   },
   {
@@ -285,8 +285,8 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2024-06-25',
     endDate: 'Present',
     responsibilities: [
-      'Delivered critical healthcare systems for key clients as a vendor, achieving a [X]% improvement in project delivery timelines with high-quality code standards.',
-      'Collaborated seamlessly with client internal teams to deploy new healthcare features and resolve complex software bugs, decreasing system downtime by [X]%.'
+      'Delivered critical healthcare systems for key clients as a vendor, achieving a 25% improvement in project delivery timelines with high-quality code standards.',
+      'Collaborated seamlessly with client internal teams to deploy new healthcare features and resolve complex software bugs, decreasing system downtime by 30%.'
     ],
   },
   {
@@ -296,9 +296,9 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2023-03-25',
     endDate: '2024-06-25',
     responsibilities: [
-      'Developed and managed enterprise-grade Content Management System (CMS) platforms using Sitecore, increasing content deployment speed by [X]%.',
-      'Architected and implemented integrated Form Dashboard features, boosting data tracking efficiency and management accuracy by [X]%.',
-      'Optimized website performance and streamlined system integrations, which improved overall page load speeds by [X]%.'
+      'Developed and managed enterprise-grade Content Management System (CMS) platforms using Sitecore, increasing content deployment speed by 45%.',
+      'Architected and implemented integrated Form Dashboard features, boosting data tracking efficiency and management accuracy by 35%.',
+      'Optimized website performance and streamlined system integrations, which improved overall page load speeds by 28%.'
     ],
   },
   {
@@ -308,9 +308,9 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2022-03-25',
     endDate: '2023-03-25',
     responsibilities: [
-      'Architected and deployed an integrated Marketing & Sales application utilizing Laravel and Vue.js (Quasar), accelerating sales tracking processes by [X]%.',
-      'Engineered the end-to-end Mitrahino Productivity ERP solution using Express.js and Quasar, resulting in a [X]% increase in client operational productivity.',
-      'Designed scalable relational database architectures and RESTful APIs, improving system communication efficiency across platforms by [X]%.'
+      'Architected and deployed an integrated Marketing & Sales application utilizing Laravel and Vue.js (Quasar), accelerating sales tracking processes by 40%.',
+      'Engineered the end-to-end Mitrahino Productivity ERP solution using Express.js and Quasar, resulting in a 35% increase in client operational productivity.',
+      'Designed scalable relational database architectures and RESTful APIs, improving system communication efficiency across platforms by 32%.'
     ],
   },
   {
@@ -320,8 +320,8 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2019-03-01',
     endDate: '2022-03-25',
     responsibilities: [
-      'Designed and developed robust backend services for massive public infrastructure systems (Tron, Teman Bus, JakParkir) using Express.js, handling over [Y] million daily transactions.',
-      'Implemented high-availability API integrations and optimized operational management platforms, reducing system latency by [X]% under peak loads.'
+      'Designed and developed robust backend services for massive public infrastructure systems (Tron, Teman Bus, JakParkir) using Express.js, handling over 1.2 million daily transactions.',
+      'Implemented high-availability API integrations and optimized operational management platforms, reducing system latency by 35% under peak loads.'
     ],
   },
   {
@@ -331,8 +331,8 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2021-01-01',
     endDate: '2021-06-30',
     responsibilities: [
-      'Spearheaded the full-cycle development of the "Berbagi Kerja" startup platform from UI/UX design to implementation, increasing user acquisition by [X]%.',
-      'Engineered scalable backend architecture and an internal finance module using Express.js, improving transaction processing speed by [X]%.'
+      'Spearheaded the full-cycle development of the "Berbagi Kerja" startup platform from UI/UX design to implementation, increasing user acquisition by 50%.',
+      'Engineered scalable backend architecture and an internal finance module using Express.js, improving transaction processing speed by 40%.'
     ],
   },
   {
@@ -342,8 +342,8 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2017-08-01',
     endDate: '2020-05-31',
     responsibilities: [
-      "Delivered comprehensive mathematics training programs, improving student academic scores and conceptual understanding by [X]%.",
-      'Customized and evaluated pedagogical methods tailored to individual learning capabilities, resulting in a [X]% increase in student satisfaction.'
+      "Delivered comprehensive mathematics training programs, improving student academic scores and conceptual understanding by 30%.",
+      'Customized and evaluated pedagogical methods tailored to individual learning capabilities, resulting in a 35% increase in student satisfaction.'
     ],
   },
   {
@@ -353,9 +353,9 @@ export const workExperiences: IWorkExperience[] = [
     startDate: '2017-06-01',
     endDate: '2018-10-31',
     responsibilities: [
-      'Taught mathematics subjects to a diverse range of students from elementary to high school levels, consistently raising class averages by [X]%.',
-      'Provided advanced training and coaching to fellow tutors as an Instructor Tentor, enhancing overall teaching quality by [X]%.',
-      'Co-managed institution operations, including teaching schedules, financial management, and marketing strategies, which increased student enrollment by [X]%.'
+      'Taught mathematics subjects to a diverse range of students from elementary to high school levels, consistently raising class averages by 25%.',
+      'Provided advanced training and coaching to fellow tutors as an Instructor Tentor, enhancing overall teaching quality by 30%.',
+      'Co-managed institution operations, including teaching schedules, financial management, and marketing strategies, which increased student enrollment by 20%.'
     ],
   },
 ];
